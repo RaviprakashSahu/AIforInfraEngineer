@@ -1,0 +1,42 @@
+﻿[2026-06-19T09:27:48.999Z] [INFO] ======================================================
+[2026-06-19T09:27:49.062Z] [INFO] FinBridge Restore — STARTING
+[2026-06-19T09:27:49.062Z] [INFO] Mode: Verify-only
+[2026-06-19T09:27:49.062Z] [INFO] Host: finbridge-vm
+[2026-06-19T09:27:49.062Z] [INFO] ======================================================
+[2026-06-19T09:27:49.078Z] [INFO] === STEP 4: Health verification ===
+[2026-06-19T09:27:50.137Z] [INFO]   [PASS] CPU: 0% (threshold <= 30%)
+[2026-06-19T09:27:50.169Z] [INFO]   [PASS] Memory: 2002.6 MB free of 4095.6 MB
+[2026-06-19T09:27:50.184Z] [INFO]   [PASS] Disk C: 114.6 GB free
+[2026-06-19T09:27:52.733Z] [INFO]   [PASS] Azure IMDS reachable — network stack healthy
+[2026-06-19T09:27:52.969Z] [INFO]   [PASS] RDP (TermService): Running
+[2026-06-19T09:27:52.985Z] [INFO] === STEP 5: Recent system errors (last 30 min) ===
+[2026-06-19T09:27:53.733Z] [INFO]   No critical/error events in last 30 minutes.
+[2026-06-19T09:27:53.733Z] [INFO] ======================================================
+[2026-06-19T09:27:53.733Z] [INFO] RESTORE VERIFIED — all health checks passed.
+[2026-06-19T10:01:58.827Z] [INFO] ======================================================
+[2026-06-19T10:01:58.859Z] [INFO] FinBridge Restore — STARTING
+[2026-06-19T10:01:58.859Z] [INFO] Mode: Full restore
+[2026-06-19T10:01:58.859Z] [INFO] Host: finbridge-vm
+[2026-06-19T10:01:58.874Z] [INFO] ======================================================
+[2026-06-19T10:01:58.874Z] [INFO] === STEP 1: Terminating stress processes ===
+[2026-06-19T10:01:58.984Z] [INFO]   No PowerShell background jobs found.
+[2026-06-19T10:01:59.015Z] [INFO]   .NET GC completed.
+[2026-06-19T10:01:59.015Z] [INFO] === STEP 2: Verifying critical Windows services ===
+[2026-06-19T10:01:59.030Z] [INFO]   Windows Time: Running OK
+[2026-06-19T10:01:59.030Z] [INFO]   WMI: Running OK
+[2026-06-19T10:01:59.030Z] [INFO]   Windows Event Log: Running OK
+[2026-06-19T10:01:59.030Z] [INFO]   Task Scheduler: Running OK
+[2026-06-19T10:01:59.030Z] [INFO]   RPC: Running OK
+[2026-06-19T10:01:59.046Z] [INFO] === STEP 3: Waiting 60s for stabilisation ===
+[2026-06-19T10:02:10.210Z] [INFO]   Stabilising: CPU 0% | Free RAM 1932.9 MB | 49s remaining
+[2026-06-19T10:02:10.225Z] [INFO]   Early recovery — skipping remaining wait.
+[2026-06-19T10:02:10.225Z] [INFO] === STEP 4: Health verification ===
+[2026-06-19T10:02:11.267Z] [INFO]   [PASS] CPU: 2% (threshold <= 30%)
+[2026-06-19T10:02:11.329Z] [INFO]   [PASS] Memory: 1932.8 MB free of 4095.6 MB
+[2026-06-19T10:02:11.470Z] [INFO]   [PASS] Disk C: 114.6 GB free
+[2026-06-19T10:02:11.517Z] [INFO]   [PASS] Azure IMDS reachable — network stack healthy
+[2026-06-19T10:02:11.517Z] [INFO]   [PASS] RDP (TermService): Running
+[2026-06-19T10:02:11.517Z] [INFO] === STEP 5: Recent system errors (last 30 min) ===
+[2026-06-19T10:02:11.548Z] [INFO]   No critical/error events in last 30 minutes.
+[2026-06-19T10:02:11.564Z] [INFO] ======================================================
+[2026-06-19T10:02:11.564Z] [INFO] RESTORE VERIFIED — all health checks passed.
